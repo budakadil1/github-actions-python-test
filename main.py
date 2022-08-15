@@ -15,7 +15,7 @@ logger_file_handler.setFormatter(formatter)
 logger.addHandler(logger_file_handler)
 
 try:
-    some_variable = os.environ["SOME_INPUT"]
+    some_variable = os.environ["SOME_SECRET"]
 except KeyError:
     some_variable = "Cannot get input for some reason..."
 
